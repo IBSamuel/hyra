@@ -23,15 +23,16 @@ const Choose = () => {
       img: "/image 220.png", 
       content: "Our app contains the 99 Names of Allah"
     },
+    
   ];
 
   return (
     <>
     <div>
-        <p className='text-center text-2xl font'>Why Choose Us</p>
+        <p className='text-center text-2xl font-semibold'>Why Choose Us</p>
     </div>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4 m-10">
-        {cardsArray.map((card, index) => (
+        {cardsArray.map((card, index)  => (
           <div key={index} className="">
             <div className={`w-full max-w-xs border rounded-lg ${card.color}`}>
               <div className="flex justify-end px-4 pt-4">
