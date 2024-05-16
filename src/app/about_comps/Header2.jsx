@@ -7,7 +7,7 @@ const Header2 = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 bg-blue-700 md:bg-blue-700 sm:bg-pink-500 p-10">
 {/* Colum 1 */}
         <div className=" md:ms-20 md:float-end">
-          <Image className='w-96' width={100} height={100} src="/image 241.png" alt="" />
+          <Image className='w-96' width={100} height={100} src="/image 241.svg" alt="" />
         </div>
 
         <div className="p-4">

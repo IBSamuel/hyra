@@ -8,7 +8,7 @@ const Header = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 md:ms-20 m-5">
 
         <div className="order-1 md:order-2  p-4">
-        <Image className='w-80' width={100} height={100} src="/image 250.png" alt="" />
+        <Image className='w-80' width={100} height={100} src="/image 53 (1).svg" alt="" />
        </div>
 
         <div className="order-2 md:order-1  p-4">

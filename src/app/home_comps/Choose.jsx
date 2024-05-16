@@ -4,49 +4,50 @@ import Image from 'next/image';
 const Choose = () => {
   const cardsArray = [
     { 
-      color: "pt-12 w-full max-w-xs bg-indigo-800 border rounded-lg",
-      img: "/image 235.png",
-      content: "Our app contains the fundamental teaching of Islam for Kids"
+      color: "bg-indigo-800",
+      img: "/carousel/image 54.svg",
+      content: "Our app contains the fundamental teachings of Islam for Kids",
     },
     { 
-      color: "pt-5 bg-red-500 w-full max-w-xs", 
-      img: "/image 234.png",
-      content: "We make it interesting by including the the Stories of the Prophets and his Companions" 
+      color: "bg-red-500", 
+      img: "/carousel/image 243.svg",
+      content: "We make it interesting by including the Stories of the Prophets and his Companions" 
     },
     {
-      color: "bg-pink-500 w-full max-w-xs",
-      img: "/image 220.png",
+      color: "bg-pink-500",
+      img: "/image 53.svg",
       content: "As we all know that Du’a is an essential part of our life as a Muslim. Du’a is also included in our app"
     },
     {
-      color: "pt-10 bg-yellow-300 w-full max-w-xs",
-      img: "/image 220.png", 
+      color: "bg-yellow-300",
+      img: "/image 254.svg", 
       content: "Our app contains the 99 Names of Allah"
     },
-    
   ];
 
   return (
-    <>
-    <div>
-        <p className='text-center text-2xl font-semibold'>Why Choose Us</p>
-    </div>
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-4 m-10">
+    <div className="mx-auto max-w-screen-xl px-4">
+      <p className="text-center text-2xl font-semibold mb-8">Why Choose Us</p>
+      <div className="grid grid-cols-1 md:grid-cols-4 ms-10 me-10 gap-2">
         {cardsArray.map((card, index)  => (
-          <div key={index} className="">
-            <div className={`w-full max-w-xs border rounded-lg ${card.color}`}>
-              <div className="flex justify-end px-4 pt-4">
-              </div>
-              <div className="flex flex-col items-center">
-                {/* Use Image component for the image */}
-                <Image className="p-4" width={200} height={200} src={card.img} alt="Bonnie image" />
-                <span className="text-center p-4 text-white">{card.content}</span>
-              </div>
+          <div key={index} className={`rounded rounded-5 shadow-lg ${card.color}`}>
+            <div className={`h-60 relative ${card.color}`}>
+              {/* Image container with relative positioning */}
+              <Image
+                src={card.img}
+                alt="Card Image"
+                layout="fill"
+                objectFit="cover" // Ensure image covers the container
+                className="rounded ps-10 pe-10 pt-10  " // Apply rounded corners to top of image
+              />
+            </div>
+            <div className="p-4">
+              <p className="text-center text-white mb-2">{card.content}</p>
             </div>
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

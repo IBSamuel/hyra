@@ -9,10 +9,10 @@ const Header3 = () => {
 
         <div className="p-4">
 
-          <p className='ms-2 md:ms-20 text-start'>The target audience for this app is kids <br /> between the ages of 7-12</p>
+          <p className='ms-2 md:ms-20 text-start text-semibold'>The target audience for this app is kids <br /> between the ages of 7-12</p>
         </div>
         <div className="p-4 md: md:float-end">
-          <Image className='w-96' width={100} height={100} src="/image 241.png" alt="" />
+          <Image className='w-96' width={100} height={100} src="/image 242.svg" alt="" />
         </div>
 
       </div>

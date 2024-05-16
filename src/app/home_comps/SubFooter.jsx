@@ -10,8 +10,8 @@ const SubFooter = () => {
       </div>
 
       {/* Right column (will disappear on small screens) */}
-      <div className="col-span-1 hidden sm:block">
-        <Image className='w-80 m-10 float-center' src="/image 237.png" width={200} height={200} alt="" />
+      <div className="col-span-1 ">
+        <Image className='w-60 lg:m-10 float-center' src="/image 237.png" width={200} height={200} alt="" />
       </div>
     </div>
   );

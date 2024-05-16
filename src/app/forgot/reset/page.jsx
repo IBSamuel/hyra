@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from "next/image"
 import Footer from '@/app/home_comps/Footer';
+import Link from 'next/link';
 
 const Page = () => {
   return (
@@ -15,7 +16,7 @@ const Page = () => {
             <input type="text" id="first_name" class="bg-gray-50 border border-pink-400 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="password" required />
             <label for="first_name" class="block mb-2 text-sm font-medium  ">Confirm Password</label>
             <input type="text" id="first_name" class="bg-gray-50 border border-pink-400 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="password" required />
-            <p className='bg-pink-400 text-white p-2 rounded m-2 text-center'>Reset Password</p>
+            <Link href='/forgot/recovery' className='bg-pink-400 text-white p-2 rounded m-2 text-center'>Reset Password</Link>
         </div>
       </div>
       </div>

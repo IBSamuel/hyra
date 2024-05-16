@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from "next/image"
 import Footer from '../home_comps/Footer';
+import Link from 'next/link';
 const Page = () => {
   return (
     <div>
@@ -11,7 +12,7 @@ const Page = () => {
       <div>
             <label for="first_name" class="block mb-2 text-sm font-medium  ">Enter your Email/Phone number</label>
             <input type="text" id="first_name" class="bg-gray-50 border border-pink-400 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="John@gmail.com" required />
-            <p className='bg-pink-400 text-white p-2 rounded m-2 text-center'>Send Code</p>
+            <Link href="/forgot/code" className='bg-pink-400 text-white p-2 rounded m-2 text-center'>Send Code</Link>
         </div>
       </div>
       </div>
