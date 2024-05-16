@@ -20,7 +20,7 @@ const Page = () => {
                             <p className='text-blue-700 font-semibold'>There are five pillars of Islam</p>
                             <p>The Pillars of Islam are as follows</p>
                             <div>Prophets are special people chosen by Allah to guide and teach mankind. Each prophet faced challenges but stayed strong in their faith.
-                                They performed miracles as a sign of Allah's power. Prophets taught people to worship and obey Allah.
+                                They performed miracles as a sign of Allahs power. Prophets taught people to worship and obey Allah.
                             </div>
                         </div>
                     </div>

@@ -26,7 +26,7 @@ const Header = () => {
     return () => {
       clearInterval(interval); // Cleanup interval on component unmount
     };
-  }, []); // Empty dependency array ensures effect runs once on component mount
+  }, ); // Empty dependency array ensures effect runs once on component mount
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 m-10">
